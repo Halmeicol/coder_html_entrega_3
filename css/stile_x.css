@@ -1,0 +1,456 @@
+
+@font-face {
+  font-family: "greek";
+  src: url(../fonts/GFSNeohellenic-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+@media (orientation: landscape) {
+
+header {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+    "img_map_icon p_header"
+  ;
+  
+}
+
+  .inbody {
+  display: grid;
+  grid-template-areas:
+  "aside ingreso_usuario01"
+  "aside registro_usuario01"
+  ;
+}
+
+
+/* Texto hypervinculos */
+a {
+  /* text-indent: 10px; */
+  color: #8e98a3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none ;
+}
+
+header div a {
+  text-decoration: none;
+}
+
+main div div aside nav ul li {
+  font-size: x-large;
+
+}
+
+/* Recuadro logo y busqueda */
+.section01 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  box-shadow: 0 0px 15px gray;
+  background-color: rgb(231, 231, 231);
+  padding: 20px;
+  
+  }
+    .logo_trs {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+    .busqueda_art
+    input {
+    width: 300px;
+    height: 40px;
+    text-align: left;
+    border: 1px solid #000000;
+    font-family:"" ;
+    font-size: x-large;
+    }
+    .logo_carrito
+    {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    }
+    
+/* Etiquetas navegacion */
+.navega_sitio  {
+  display: flex;
+  justify-content: center;
+  }
+  .navega_sitio ul li  {
+    margin: 10px;
+    display: inline;
+    font-size: x-large;
+    }
+    .navega_sitio ul li a {
+      text-decoration: none;
+    }
+/* Cuerpo principal de contenido */
+
+  
+  /* Categorias */
+.categoria2 {
+  border: 1px solid gray;
+}
+  .categoria2 a {
+  font-size: x-large;
+  font-weight: bold;
+  }
+
+/* Categorias Fin */
+
+/* imagenes centro */
+
+.img_cent {
+  box-shadow: 0 0 20px black ;
+  
+}
+  /* Recuadro ingreso y registro */
+  .ingreso_usuario01 fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 240px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+.registro_usuario01 fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 240px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+  }  
+  label {
+    width: 300px;
+    height: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: large;
+  }
+  input {
+    width: 300px;
+    height: 30px;
+    text-align: left;
+    border: 1px solid #000000;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    
+  }
+  .boton-gris {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: large;
+  }
+
+/* Formulario contacto */
+/* Recuadro contacto */
+.contacto_form fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 660px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+  .recu_usuario01 fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 180px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #comentario01 {
+  margin-left: 20px;
+  }
+
+
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0 0 15px black;
+  }
+  .logo_foot {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    }
+  footer div div div nav ul li a {
+  list-style: none ;
+  color: blue;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 5px;
+  }
+}
+
+
+
+
+
+@media (orientation: portrait) {
+
+  header {
+      display: grid;
+      grid-template-areas: 
+        "img_map_icon"
+        "p_header"
+      ;
+      
+    }
+  .img_map_icon {
+    
+    justify-self: center !important;
+  }
+  .p_header {
+    
+    justify-self: center !important;
+  }
+  
+    .inbody {
+      display: grid;
+      grid-template-areas:
+      "aside ingreso_usuario01"
+      "aside registro_usuario01"
+      ;
+    }
+    
+  
+  
+    @font-face {
+        font-family: "greek";
+        src: url(../fonts/GFSNeohellenic-Regular.ttf);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    
+    
+    /* Texto hypervinculos */
+    a {
+      color: #8e98a3;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: small;
+    }
+    
+    ul{
+      list-style: none ;
+    }
+    
+    header div a {
+      text-decoration: none;
+    }
+    
+    main div div aside nav ul li {
+      font-size: large;
+    
+    }
+    
+    /* Recuadro logo y busqueda */
+    .section01 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      box-shadow: 0 0px 15px gray;
+      background-color: rgb(231, 231, 231);
+      padding: 20px;
+      
+      }
+        .logo_trs {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        }
+        .busqueda_art
+        input {
+        width: 300px;
+        height: 40px;
+        text-align: left;
+        border: 1px solid #000000;
+        font-family:"" ;
+        font-size: large;
+        }
+        .logo_carrito
+        {
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+        margin-left: 0px;
+        }
+        
+    /* Etiquetas navegacion */
+    .navega_sitio  {
+      display: flex;
+      justify-content: center;
+      }
+      .navega_sitio ul li  {
+        margin: 10px;
+        display: inline;
+        font-size: large;
+        }
+        .navega_sitio ul li a {
+          text-decoration: none;
+        }
+    /* Cuerpo principal de contenido */
+    
+      
+      /* Categorias */
+    aside {
+      justify-self: center !important;
+      align-self: center !important;
+    }
+    .categoria2 {
+      border: 1px solid gray;
+      display: grid !important;
+      width: 250px;
+      justify-content: center;
+    }
+    aside nav ul {
+      font-size: large;
+      font-weight: bold;
+      }
+    
+    /* Categorias Fin */
+    
+    /* imagenes centro */
+    
+    .img_cent {
+      box-shadow: 0 0 20px black ;
+      
+    }
+  /* Recuadro ingreso y registro */
+  .ingreso_usuario01 fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 240px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.registro_usuario01 fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 240px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+  }  
+  label {
+    width: 300px;
+    height: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: large;
+  }
+  input {
+    width: 300px;
+    height: 30px;
+    text-align: left;
+    border: 1px solid #000000;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    
+  }
+  .boton-gris {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: large;
+  }
+  .contacto_form fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 660px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .recu_usuario01 fieldset {
+    display: inline-block;
+    width: 350px;
+    height: 180px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+    
+    /* Footer */
+    footer {
+      width: 100%;
+      margin-top: 30px;
+      background-color: rgb(231, 231, 231);
+      box-shadow: 0 0 15px black;
+      }
+      .logo_foot {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 80px;
+        height: 80px;
+        }
+      footer div div div nav ul li a {
+      list-style: none ;
+      color: blue;
+      font-size: large;
+      text-decoration: none;
+      margin: 5px;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
