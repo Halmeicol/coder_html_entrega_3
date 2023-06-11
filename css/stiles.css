@@ -3,6 +3,77 @@
   font-family: "greek";
   src: url(../fonts/GFSNeohellenic-Regular.ttf);
 }
+/* Animate_flash */
+@keyframes animate_flash {
+  0%, 50%, to {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.animate_flash {
+  animation-name: animate_flash;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+/* Fin animate_flash */
+/* Animate color raimbow */
+@keyframes raimbow_changre_color {
+  15% {
+    color: brown;
+  }
+  30% {
+    color: pink;
+  }
+  60% {
+    color: green;
+  }
+  75% {
+    color: red;
+  }
+  90% {
+    color: yellow;
+  }
+}
+.raimbow_changre_color {
+  animation-name: raimbow_changre_color;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 16s;
+  animation-delay: 0s;
+}
+
+.Nombre_empresa {
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+
+/* Fin Animate color raimbow */
+.navega_sitio {
+  display: flex;
+  justify-content: center;
+}
+.navega_sitio ul li {
+  margin: 10px;
+  display: inline;
+  font-size: x-large;
+}
+.navega_sitio ul a {
+  text-decoration: none;
+}
+
+/* FIN Etiquetas navegacion */
+/* imagenes centro */
+.img_cent {
+  box-shadow: 0 0 20px black;
+}
+
+/* FIN imagenes centro */
 /* Inicio estilo desktop */
 @media (orientation: landscape) {
   /* Header */
@@ -59,20 +130,6 @@
     margin-left: 30px;
   }
   /* FIN Recuadro logo y busqueda */
-  /* Etiquetas navegacion */
-  .navega_sitio {
-    display: flex;
-    justify-content: center;
-  }
-  .navega_sitio ul li {
-    margin: 10px;
-    display: inline;
-    font-size: x-large;
-  }
-  .navega_sitio ul a {
-    text-decoration: none;
-  }
-  /* FIN Etiquetas navegacion */
   /* Cuerpo principal de contenido */
   /* Categorias */
   .categoria2 {
@@ -83,11 +140,6 @@
     font-weight: bold;
   }
   /* Categorias Fin */
-  /* imagenes centro */
-  .img_cent {
-    box-shadow: 0 0 20px black;
-  }
-  /* FIN imagenes centro */
   /* Recuadro ingreso y registro */
   .ingreso_usuario01 fieldset {
     display: inline-block;
@@ -163,27 +215,6 @@
     margin-bottom: 10px;
   }
   /* Recuadro recuperacion */
-  /* Footer */
-  footer {
-    width: 100%;
-    margin-top: 30px;
-    background-color: rgb(231, 231, 231);
-    box-shadow: 0 0 15px black;
-  }
-  .footer_nav_txt {
-    list-style: none;
-    color: blue;
-    font-size: x-large;
-    text-decoration: none;
-    margin: 5px;
-  }
-  .logo_foot {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 80px;
-    height: 80px;
-  }
-  /* Fin del Footer */
 }
 /* Fin estilo desktop */
 /* Inicio estilo mobile */
@@ -250,20 +281,6 @@
     margin-left: 0px;
   }
   /* FIN Recuadro logo y busqueda */
-  /* Etiquetas navegacion */
-  .navega_sitio {
-    display: flex;
-    justify-content: center;
-  }
-  .navega_sitio ul li {
-    margin: 10px;
-    display: inline;
-    font-size: large;
-  }
-  .navega_sitio ul a {
-    text-decoration: none;
-  }
-  /* FIN Etiquetas navegacion */
   /* Cuerpo principal de contenido */
   /* Categorias */
   aside {
@@ -280,15 +297,10 @@
     justify-content: center;
   }
   /* Categorias Fin */
-  /* imagenes centro */
-  .img_cent {
-    box-shadow: 0 0 20px black;
-  }
-  /* FIN imagenes centro */
   /* Recuadro ingreso y registro */
   .ingreso_usuario01 fieldset {
     display: inline-block;
-    width: 350px;
+    width: 340px;
     height: 240px;
     padding: 20px;
     border: 1px solid #000000;
@@ -298,7 +310,7 @@
   }
   .registro_usuario01 fieldset {
     display: inline-block;
-    width: 350px;
+    width: 340px;
     height: 240px;
     padding: 20px;
     border: 1px solid #000000;
@@ -338,7 +350,7 @@
   /* Recuadro contacto */
   .contacto_form fieldset {
     display: inline-block;
-    width: 350px;
+    width: 340px;
     height: 660px;
     padding: 20px;
     border: 1px solid #000000;
@@ -350,7 +362,7 @@
   /* Recuadro recuperacion */
   .recu_usuario01 fieldset {
     display: inline-block;
-    width: 350px;
+    width: 340px;
     height: 180px;
     padding: 20px;
     border: 1px solid #000000;
@@ -359,28 +371,30 @@
     margin-bottom: 10px;
   }
   /* Recuadro recuperacion */
-  /* Footer */
-  footer {
-    width: 100%;
-    margin-top: 30px;
-    background-color: rgb(231, 231, 231);
-    box-shadow: 0 0 15px black;
-  }
-  .logo_foot {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 80px;
-    height: 80px;
-  }
-  .footer_nav_txt {
-    list-style: none;
-    color: blue;
-    font-size: large;
-    text-decoration: none;
-    margin: 5px;
-  }
-  /* Fin del Footer */
 }
 /* Fin estilo mobile */
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0 0 15px black;
+}
+
+.footer_nav_txt {
+  list-style: none;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.logo_foot {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+/* Fin del Footer */
 
 /*# sourceMappingURL=stiles.css.map */
