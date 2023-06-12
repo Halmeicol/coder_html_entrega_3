@@ -1,0 +1,51 @@
+/* Etiquetas navegacion */
+.navega_sitio  {
+    display: flex;
+    justify-content: center;
+    ul {
+        li {
+        margin: 10px;
+        display: inline;
+        font-size: x-large;
+        }
+        a {
+        text-decoration: none;
+        }
+    }
+}
+.cat_text {
+    text-align: center;
+    font-family: 'arial';
+}
+/* FIN Etiquetas navegacion */
+/* imagenes centro */
+.img_cent {
+    box-shadow: 0 0 20px black ;
+}
+/* FIN imagenes centro */
+
+/* Footer */
+    footer {
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 0 15px black;
+    }
+    .footer_nav_txt {
+    list-style: none ;
+    // color: blue;
+    font-size: x-large;
+    text-decoration: none;
+    margin: 5px;
+    }
+    .logo_foot {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    }
+/* Fin del Footer */
+.btn-primary { 
+    // background-color: orange !important;
+    // color: black !important;
+}

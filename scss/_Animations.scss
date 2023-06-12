@@ -1,0 +1,41 @@
+
+/* Animate_flash */
+  @keyframes animate_flash {
+    0%, 50%, to {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  .animate_flash {
+    animation-name: animate_flash;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 0s;
+  }
+/* Fin animate_flash */
+
+/* Animate color raimbow */
+  @keyframes raimbow_changre_color {
+    15% {color:brown}
+    30% {color: pink}
+    60% { color: green}
+    75% {color: red}
+    90% { color:yellow}
+    }
+  .raimbow_changre_color {
+  animation-name: raimbow_changre_color;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 16s;
+    animation-delay: 0s;
+    font-family: greek2_fnt;
+  }
+  .Nombre_empresa {
+    display: flex;
+    justify-content: center;
+    color: blue;
+  }
+  /* Fin Animate color raimbow */

@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@font-face {
-  font-family: "greek";
-  src: url(../fonts/GFSNeohellenic-Regular.ttf);
-}
 /* Animate_flash */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @keyframes animate_flash {
   0%, 50%, to {
     opacity: 1;
@@ -45,6 +41,7 @@
   animation-timing-function: ease-in;
   animation-duration: 16s;
   animation-delay: 0s;
+  font-family: greek2_fnt;
 }
 
 .Nombre_empresa {
@@ -54,6 +51,19 @@
 }
 
 /* Fin Animate color raimbow */
+@font-face {
+  font-family: "greek";
+  src: url(../fonts/GFSNeohellenic-Regular.ttf);
+}
+@font-face {
+  font-family: "greek2_fnt";
+  src: url(../fonts/EBGaramond-Regular.ttf);
+}
+@font-face {
+  font-family: "greek2B_fnt";
+  src: url(../fonts/EBGaramond-Bold.ttf);
+}
+/* Variables */ /* Etiquetas navegacion */
 .navega_sitio {
   display: flex;
   justify-content: center;
@@ -67,6 +77,11 @@
   text-decoration: none;
 }
 
+.cat_text {
+  text-align: center;
+  font-family: "arial";
+}
+
 /* FIN Etiquetas navegacion */
 /* imagenes centro */
 .img_cent {
@@ -74,6 +89,29 @@
 }
 
 /* FIN imagenes centro */
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0 0 15px black;
+}
+
+.footer_nav_txt {
+  list-style: none;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.logo_foot {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+/* Fin del Footer */
 /* Inicio estilo desktop */
 @media (orientation: landscape) {
   /* Header */
@@ -91,8 +129,6 @@
   }
   /* Texto hypervinculos */
   a {
-    color: #8e98a3;
-    text-decoration: none;
     font-weight: bold;
   }
   ul {
@@ -121,7 +157,7 @@
     height: 40px;
     text-align: left;
     border: 1px solid #000000;
-    font-family: "";
+    font-family: "arial";
     font-size: x-large;
   }
   .logo_carrito {
@@ -239,8 +275,6 @@
   }
   /* Texto hypervinculos */
   a {
-    color: #8e98a3;
-    text-decoration: none;
     font-weight: bold;
     font-size: small;
   }
@@ -271,7 +305,7 @@
     height: 40px;
     text-align: left;
     border: 1px solid #000000;
-    font-family: "";
+    font-family: "arial";
     font-size: large;
   }
   .logo_carrito {
@@ -294,7 +328,7 @@
     border: 1px solid gray;
     display: grid !important;
     width: 250px;
-    justify-content: center;
+    text-align: center;
   }
   /* Categorias Fin */
   /* Recuadro ingreso y registro */
@@ -373,28 +407,5 @@
   /* Recuadro recuperacion */
 }
 /* Fin estilo mobile */
-/* Footer */
-footer {
-  width: 100%;
-  margin-top: 30px;
-  background-color: rgb(231, 231, 231);
-  box-shadow: 0 0 15px black;
-}
-
-.footer_nav_txt {
-  list-style: none;
-  font-size: x-large;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.logo_foot {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: 80px;
-  height: 80px;
-}
-
-/* Fin del Footer */
 
 /*# sourceMappingURL=stiles.css.map */
